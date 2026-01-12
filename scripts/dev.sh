@@ -28,7 +28,7 @@ trap cleanup SIGINT SIGTERM
 echo "Starting Python server..."
 cd server
 source venv/bin/activate
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000 &
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8010 &
 SERVER_PID=$!
 cd ..
 
@@ -44,8 +44,8 @@ cd ..
 
 echo
 echo "=== Development servers running ==="
-echo "Server: http://localhost:8000"
-echo "Client: http://localhost:3000"
+echo "Server: http://localhost:8010"
+echo "Client: http://localhost:3010"
 echo
 echo "Press Ctrl+C to stop"
 

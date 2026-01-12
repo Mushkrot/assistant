@@ -708,7 +708,7 @@
   COPY requirements.txt .
   RUN pip install --no-cache-dir -r requirements.txt
   COPY . .
-  CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+  CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8010"]
   ```
 - [ ] Создать `docker-compose.yml`:
   ```yaml
@@ -716,7 +716,7 @@
     server:
       build: ./server
       ports:
-        - "8000:8000"
+        - "8010:8010"
       environment:
         - OPENAI_API_KEY=${OPENAI_API_KEY}
         - OLLAMA_BASE_URL=http://ollama:11434

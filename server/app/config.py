@@ -24,7 +24,7 @@ class Settings(BaseSettings):
 
     # Server
     server_host: str = Field(default="0.0.0.0")
-    server_port: int = Field(default=8000)
+    server_port: int = Field(default=8010)
 
     # Logging
     log_level: Literal["DEBUG", "INFO", "WARNING", "ERROR"] = Field(default="INFO")

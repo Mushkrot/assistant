@@ -77,8 +77,8 @@ OLLAMA_MODEL=llama3.1:8b
 ```
 
 This starts:
-- Python server at http://localhost:8000
-- React client at http://localhost:3000
+- Python server at http://localhost:8010
+- React client at http://localhost:3010
 
 ### 4. Configure Mac Audio (First Time)
 
@@ -95,7 +95,7 @@ This starts:
 
 3. **Before Meeting**:
    - Set system output to "Meeting Output" in System Settings → Sound
-   - Open Chrome and navigate to http://localhost:3000
+   - Open Chrome and navigate to http://localhost:3010
    - Select your microphone and BlackHole in the app
 
 ## Usage
