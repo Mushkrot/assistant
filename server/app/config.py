@@ -37,6 +37,7 @@ class Settings(BaseSettings):
         "env_file": "/opt/secure-configs/.env",
         "env_file_encoding": "utf-8",
         "case_sensitive": False,
+        "extra": "ignore",
     }
 
 
